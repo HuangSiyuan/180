@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+	.wrapper {
+		/*background: pink;*/
+		width: 920px;
+		margin: 0 auto;
+	}
+	.header {
+		background: pink;
+	}
+	.content {
+		overflow: hidden;
+	}
+	.content .primary {
+		background: lightblue;
+		width: 670px;
+		float: right;
+		display: inline;  /* 防止ie中双外边距浮动产生bug*/
+	}
+	.content .secondary {
+		background: lightgreen;
+		width: 230px;
+		float: left;
+		display: inline;
+	}
+	.content .primary .primary {
+		background: gray;
+		float: left;
+		width: 400px;
+		display: inline;
+	}
+	.content .primary .secondary {
+		background: black;
+		color: white;
+		float: right;
+		width: 230px;
+		padding-right: 20px;
+		display: inline;
+	}
+	ol {
+		text-decoration: none;  /*??*/
+	}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<h1>Branding</h1>
+		</div>
+		<div class="content">
+			<div class="primary">
+				<div class="primary">
+					<h2>lalalala</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+					<h2>Ea commodo consequat</h2>
+					<p>Ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+
+					<p>Ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+				</div>
+				<div class="secondary">
+					<h2>Magna aliquam erat volutpat</h2>
+					<p>Magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+					<p>Aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>					
+				</div>
+			</div>
+			<div class="secondary">
+				<ul id="mainNav"> 
+					<li class="first"><a href="#">Home</a></li> 
+					<li><a href="#">About</a></li> 
+					<li><a href="#">News</a></li> 
+					<li><a href="#">Products</a></li> 
+					<li><a href="#">Services</a></li> 
+					<li><a href="#">Clients</a></li> 
+					<li><a href="#">Case Studies</a></li> 
+				</ul> 
+			</div>
+		</div>
+		<div class="footer">
+			<ol>
+				<li>固定宽度</li>
+				<li>流式</li>
+				<li>弹性</li>
+			</ol>
+		</div>
+	</div>
+</body>

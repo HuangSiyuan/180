@@ -2,55 +2,304 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Table Asshole</title>
 </head>
 <body>
+	table summary
+	<table class="cal" summary="A date picker">
+		<caption>
+			<a href="#" rel="prev">&lt</a>
+			October 2014
+			<a href="#" rel="next">&gt</a>
+		</caption>
+		<colgroup>
+			<col id="sun"></col>
+			<col id="mon"></col>
+			<col id="tue"></col>
+			<col id="wed"></col>
+			<col id="thur"></col>
+			<col id="fri"></col>
+			<col id="sat"></col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">Sun</th>
+				<th scope="col">Mon</th>
+				<th scope="col">Tue</th>
+				<th scope="col">Wed</th>
+				<th scope="col">Thur</th>
+				<th scope="col">Fri</th>
+				<th scope="col">Sat</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="null">28</td>
+				<td class="null">29</td>
+				<td class="null">30</td>
+				<td><a href="#">1</a></td>
+				<td><a href="#">2</a></td>
+				<td><a href="#">3</a></td>
+				<td><a href="#">4</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">5</a></td>
+				<td><a href="#">6</a></td>
+				<td><a href="#">7</a></td>
+				<td><a href="#">8</a></td>
+				<td><a href="#">9</a></td>
+				<td><a href="#">10</a></td>
+				<td><a href="#">11</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">12</a></td>
+				<td><a href="#">13</a></td>
+				<td><a href="#">14</a></td>
+				<td><a href="#">15</a></td>
+				<td><a href="#">16</a></td>
+				<td><a href="#">17</a></td>
+				<td><a href="#">18</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">19</a></td>
+				<td><a href="#">20</a></td>
+				<td><a href="#">21</a></td>
+				<td><a href="#">22</a></td>
+				<td><a href="#">23</a></td>
+				<td><a href="#">24</a></td>
+				<td><a href="#">25</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">26</a></td>
+				<td><a href="#">27</a></td>
+				<td><a href="#">28</a></td>
+				<td class="selected"><a href="#">29</a></td>
+				<td><a href="#">30</a></td>
+				<td><a href="#">31</a></td>
+				<td class="null">1</td>
+			</tr>
+		</tbody>
+	</table>
 <style type="text/css">
-	ul.nav {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		width: 8em;
-		border: 1px solid #000;
-		background-color: lightblue;
+	table.cal {
+		border-collapse: separate;
+		border-spacing: 0;
+		text-align: center;
+		color: #333;
 	}
-	ul.nav a {
-		display: block;
-		color: blue;
-		text-decoration: none;
-		border-top: 2px solid green;
-		border-bottom: 2px solid white;
-		background: url(img/bullet.gif) no-repeat 5% 50%;
-		padding: 0.3em 2em;
+	.cal caption {
+		font-size: 1.2em;
+		color: red;
+		background-color: yellow;
 	}
-	ul.nav a:hover,
-	ul.nav a:focus {
-		color: lightgray;
-		background-color: pink;
-	}
-	ol.pagination {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-	}
-	ol.pagination li {
+	.cal caption [rel="prev"] {
 		float: left;
-		margin-right: 0.6em;
+		margin-left: 0;
+	}
+	.cal caption [rel="next"] {
+		float: right;
+		margin-right: 0;
+	}
+	.cal caption a:link,
+	.cal caption a:visited {
+		text-decoration: none;
+		color: green;
+	}
+	.cal caption a:hover,
+	.cal caption a:active,
+	.cal caption a:focus {
+		background-color: white;
+	}
+	.cal thead th {
+		color: white;
+		background-color: orange;
+		border-bottom: 5px solid red;
+		font-size: 0.9em;
+	}
+	.cal tbody {
+		color: red;
+		background-color: yellow;
+		text-shadow: 3px 3px 3px white;
+	}
+	.cal tbody td {
+		border-top: 3px solid red;
+		border-left: 3px solid red;
+		border-right: 3px solid red;
+		border-bottom: 3px solid red;
+	}
+	.cal tbody a {
+		display: block;
+		text-decoration: none;
+		color: green;
+		background-color: orange;
+		padding: 0.3em 0.6em 0.3em 0.6em;
+		font-weight: bold;
+	}
+	.cal tbody a:hover,
+	.cal tbody a:active,
+	.cal tbody a:focus,
+	.cal tbody .selected a:link,
+	.cal tbody .selected a:visited,
+	.cal tbody .selected a:hover,
+	.cal tbody .selected a:focus,
+	.cal tbody .selected a:active {
+		color: white;
+		background-color: black;
+		text-shadow: 10px 10px 10px blue;
 	}
 </style>
-	<ul class="nav">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="border.html">Border</a></li>
-		<li><a href="link.html">Link</a></li>
-		<li><a href="table.html">Table</a></li>
-	</ul>
-	<ol class="pagination">
-		<li><a href="search.html?page=1" rel="prev">Prev</a></li>
-		<li><a href="search.html?page=1">1</a></li>
-		<li class="selected">2</li>
-		<li><a href="search.html?page=3">3</a></li>
-		<li><a href="search.html?page=4">4</a></li>
-		<li><a href="search.html?page=5">5</a></li>
-		<li><a href="search.html?page=3" rel="next">Next</a></li>
-	</ol>
+a和td之间的空隙叫啥
+<fieldset>
+	<legend>Contact Details</legend>  <!-- differ between browsers -->
+	<div>
+		<label for="author">Name:<em class="required">(required)</em></label>  <!-- em/strong required -->
+		<input name="author" id="author" type="text" />
+	</div>
+	<div>
+		<label for="email">Email Address:
+		<em class="feedback">Incorrect email address. </em></label>
+		<input name="email" id="email" type="text" />
+	</div>
+	form不好用?
+	<div>
+		<label for="url">Web Address:</label>
+		<input name="url" id="url" type="text" />
+	</div>
+	<div>
+		<label for="text">Message:</label>
+		<textarea name="text" id="text"></textarea>
+	</div>
+	<div>
+		<label for="remember-yes">Yes</label>
+		<input id="remember-yes" name="remember" class="radio" type="radio" value="yes" />
+		<label for="remember-no">No</label>
+		<input id="remember-no" name="remember" class="radio" type="radio" value="no" />
+	</div>
+	<div>
+		<label for="dateOfBirth">Date of Birth:</label>
+		<input name="dateOfBirth" id="dateOfBirth" type="text" />
+		<label for="monthOfBirth" id="monthOfBirthLabel">Month of Birth:</label>
+		<select name="monthOfBirth" id="monthOfBirth">
+			<option value="10">October</option>
+			<option value="11">November</option>
+		</select>
+		<label for="yearOfBirth" id="yearOfBirthLabel">Year of Birth:</label>
+		<input name="yearOfBirth" id="yearOfBirth" type="text" />
+	</div>
+	<fieldset id="favoriteColor">
+		<h2>Favorite Color:</h2>
+		<div class="col">
+			<div>			<!-- 这个div干嘛的 -->
+				<label>      <!-- each -->
+					<input class="checkbox" id="red" name="red" type="checkbox" value="red" />
+					Red
+				</label>
+				<label>
+					<input class="checkbox" id="orange" name="orange" type="checkbox" value="orange" />
+					Orange
+				</label>
+			</div>
+		</div>
+		<div class="col">
+			<div>		
+				<label>
+					<input class="checkbox" id="blue" name="blue" type="checkbox" value="blue" />
+					Blue
+				</label>
+				<label>
+					<input class="checkbox" id="green" name="green" type="checkbox" value="green" />
+					Green
+				</label>
+			</div>
+		</div>
+	</fieldset>
+	<div>
+		<button type="submit">
+			<img src="img/x.jpg" alt="Submit" />
+		</button>
+	</div>
+</fieldset>
+<style type="text/css">
+	button {
+		cursor: pointer;   /*button+cursor??*/
+	}
+	fieldset {
+		width: 60em;
+		margin: 5em 0;
+		padding: 1em;
+		border: 3px solid red;
+		background: pink;
+	}
+	legend {
+		font-weight: bold;
+	}
+	label {
+		float: left;
+		width: 10em;
+		cursor: pointer;
+	}
+	input[type="text"] {
+		width: 20em;
+	}
+	input[type="text"]:focus,
+	textarea:focus {
+		background: black;
+	}
+	textarea {
+		width: 50%;
+		height: 10em;
+	}
+	input.radio {
+		width: auto;
+		margin-left: 1em;
+	}
+	.required {
+		font-weight: bold;
+		color: red;
+	}
+
+	div {
+		clear: left;   /*???*/
+		position: relative;
+	}
+	label .feedback {	/*???*/
+		position: absolute;
+		left: 30em;
+		right: 0;
+		top: 2em;
+		font-weight: bold;
+	}
+	#monthOfBirthLabel, #yearOfBirthLabel {
+		text-indent: -1000em;
+		width: 0;
+	}
+	input#dateOfBirth {
+		width: 3em;
+		margin-right: 0.5em;
+	}
+	input#monthOfBirth {
+		width: 5em;
+		margin-right: 0.5em;
+	}
+	input#yearOfBirth {
+		width: 5em;
+	}
+	fieldset#favoriteColor {
+		margin: 0;
+		padding: 0;
+		border: none;
+		background: transparent;
+	}
+	#favoriteColor h2 {
+		width: 10em;
+		float: left;
+		font-size: 1em;
+		font-weight: normal;
+	}
+	#favoriteColor .col {
+		width: 8em;
+		float: left;
+		clear: none;
+	}
+
+</style>
 </body>

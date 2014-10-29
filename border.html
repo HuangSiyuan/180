@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>image etc. testing</title>
 </head>
 <style type="text/css">
 	body {
-		background-image: url(img/gradient.jpg);
+		background-image: url(img/body_bg.png);
 		background-repeat: repeat-x;
-		background-color: #ffffff;
+		background-color: #fff;
 	}
 	#branding {
-		width: 700px;
+		padding-top: 20px;
 		height: 300px;
 		background-image: url(img/dog1.jpg);
 		background-repeat: no-repeat;
+		background-position: 50%
 	}
 	h2 {
 		padding-left: 30px;
@@ -20,25 +22,77 @@
 		background-repeat: no-repeat;
 		background-position: left center;
 	}
-	.box {
-		width: 600px;
-		background: #fff url(/img/bottom.png) no-repeat left bottom;
+	.box1 {
+		width: 418px;
+		background: #effce7 url(img/bottom.gif) no-repeat left bottom;
 		padding-bottom: 1px;
 	}
-	.box h2 {
-		background: url(img/top.jpg) no-repeat left top;
+	.box1 h2 {
+		background: url(img/top.gif) no-repeat left top;
 		margin-top: 0;
-		padding: 20px 20px 0 40px;
+		padding: 20px 20px 0 20px;
 	}
-	.box p {
+	.box1 p {
 		padding: 0 20px;
+	}
+	.box2 {
+		width: 424px;
+		background: url(img/tile2.gif) repeat-y;
+	}
+	.box2 h2 {
+		background: url(img/top2.gif) no-repeat left top;
+		padding-top: 20px;
+	}
+	.box2 .last {
+		background: url(img/bottom2.gif) no-repeat left bottom;
+		padding-bottom: 20px;
+	}
+	.box2 h2, .box2 .last {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.box3 {
+		width: 20em;
+		background: #effce7 url(img/bottom-left.gif) no-repeat left bottom;
+	}
+	.box3-outer {
+		background: url(img/bottom-right.gif) no-repeat right bottom;
+		padding-bottom: 1em;
+	}
+	.box3-inner {
+		background: url(img/top-left.gif) no-repeat left top;
+	}
+	.box3 h2 {
+		background: url(img/top-right.gif) no-repeat right top;
+		padding-top: 1em;
+	}
+	.box3 h2, .box3 p {
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 </style>
 <body>
 	<div id="branding"></div>
-	<h2>My headline...</h2>
-	<div class="box">
-		<h2>Headline</h2>
-		<p>Content bi----------------------------------xxxxxxxxxxxxxxxxxxxxxx------------xxxxxxxxxxxxxxxxxxxxxxxxxx---------</p>
+	<h2>Breaking News 懒鬼滚粗</h2>
+	<div class="box1">
+		<h2>Su Hai made a big mistake!  (single color & no border)</h2>
+		<p>Today is a big day for Su Hai's company - eve for a new startup company. But Su made a very foolish mistake this afternoon. Will he got fired?! We will see!!</p>
 	</div>
+	<div class="box2">
+		<h2>Small idiot shit on Su Hai's bed! (with border)</h2>
+		<p class="last">Today our small rabbit gave a shit on Asshole Su's bed. Will she die after Su comming back?! Let's see!!</p>
+	</div>
+	<div class="box3">
+	<div class="box3-outer">
+	<div class="box3-inner">
+		<h2>Iris is becoming much more beautifull! (expand horizontally)</h2>
+		<p>Small idiot shocked by Iris's beauty and shit on Su's bed. lalalalalalalalalalalalalala</p>
+		</div>
+		</div>
+	</div>
+	<div class="boyfriend">
+		<img src="img/bf.jpg" width="300" height="300" alt="Su Hai" />
+	</div>
+	em - ?? danwei
+	p element cann't set background-img??
 </body>
