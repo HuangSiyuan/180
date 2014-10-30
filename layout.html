@@ -3,38 +3,55 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
+	.wrapper2 {
+		width: 100%;
+		overflow: hidden;
+	}
+	.box {
+		width: 250px;
+		margin-left: 20px;
+		float: left;
+		display: inline;
+		padding-top: 20px;
+		padding-bottom: 520px;
+		margin-bottom: -200px;
+		background: #89ac10 url(img/top.gif) no-repeat left top;
+	}
+	body {
+		background-color: gray;
+	}
 	.wrapper {
-		/*background: pink;*/
+		background: #fff url(img/secondary-faux-col.gif) repeat-y 25% 0;
 		width: 920px;
 		margin: 0 auto;
 	}
 	.header {
-		background: pink;
+		/*background: pink;*/
 	}
 	.content {
 		overflow: hidden;
 	}
 	.content .primary {
-		background: lightblue;
+		/*background: lightblue;*/
 		width: 670px;
 		float: right;
 		display: inline;  /* 防止ie中双外边距浮动产生bug*/
 	}
 	.content .secondary {
-		background: lightgreen;
+		/*background: lightgreen;*/
 		width: 230px;
 		float: left;
 		display: inline;
 	}
 	.content .primary .primary {
-		background: gray;
+		/*background: gray;*/
 		float: left;
 		width: 400px;
 		display: inline;
 	}
 	.content .primary .secondary {
-		background: black;
-		color: white;
+		/*background: black;*/
+		/*color: white;*/
 		float: right;
 		width: 230px;
 		padding-right: 20px;
@@ -43,9 +60,49 @@
 	ol {
 		text-decoration: none;  /*??*/
 	}
+	.col {
+		-moz-column-count: 3;
+		-moz-column-width: 14em;
+		-moz-column-gap: 2em;
+		-moz-column-rule: 1px solid #ccc;
+	}
+	#box {
+		margin: 10px;
+		/*padding: 1px;*/
+		border: 1px solid red;
+		background-color: #d5d5d5;
+	}
+	#box p {
+		margin: 20px;
+		background-color: #6699ff;
+	}
 </style>
 </head>
 <body>
+-moz?
+	<div id="box">
+		<p>This p has a 20px margin.</p>
+	</div>
+	<h1>Socrates</h1>
+	<div class="col"></div>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+	<div class="wrapper2">
+		<div class="box">
+			<h2>Huang</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+			<div class="bottom"></div>
+		</div>
+		<div class="box">
+			<h2>Si</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+			<div class="bottom"></div>
+		</div>
+		<div class="box">
+			<h2>Yuan</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.</p>
+			<div class="bottom"></div>
+		</div>
+	</div>
 	<div class="wrapper">
 		<div class="header">
 			<h1>Branding</h1>
